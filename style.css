@@ -1,0 +1,59 @@
+body{
+    background-color: #E90074;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: black;
+    color: antiquewhite;
+    height:60px;
+    width: 100vw;
+    display: flex;
+}
+
+.logo{
+    margin:10px;
+    border-radius: 10%;
+}
+
+.play, .cap{
+    padding: 20px 0px;
+    font-size:x-large;
+    font-family: "Great Vibes", cursive;
+    font-weight: lighter;
+}
+
+#title{
+    font-family: "Lobster", sans-serif;
+    font-size:50px;
+    font-weight: lighter;
+   text-shadow: 1px 1px black;
+}   
+
+.container{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.btn{
+    height:125px;
+    width: 125px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10%;
+    margin:40px 20px;
+    cursor: pointer;
+    box-shadow: 7px 7px 7px #333;
+}
+
+.row img{
+    padding: 2px 15px;
+}
