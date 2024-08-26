@@ -6,25 +6,25 @@ $(window).on('load', function(){
 });
 
 $("#happy").click(function(){
-    window.open('happy.html');
+    window.open("happy.html");
 });
 
 $("#sad").click(function(){
-    window.open('sad.html');
+    window.open("sad.html");
 });
 
 $("#love").click(function(){
-    window.open('love.html');
+    window.open("love.html");
 });
 
 $("#devotional").click(function(){
-    window.open('devotional.html');
+    window.open("devotional.html");
 });
 
 $("#motivation").click(function(){
-    window.open('motivation.html');
+    window.open("motivation.html");
 });
 
 $("#energy").click(function(){
-    window.open('party.html');
+    window.open("party.html");
 });
