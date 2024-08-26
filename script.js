@@ -6,25 +6,25 @@ $(window).on('load', function(){
 });
 
 $("#happy").click(function(){
-    window.open('http://127.0.0.1:3000/Music%20playing%20site/happy.html');
+    window.open('happy.html');
 });
 
 $("#sad").click(function(){
-    window.open('http://127.0.0.1:3000/Music%20playing%20site/sad.html');
+    window.open('sad.html');
 });
 
 $("#love").click(function(){
-    window.open('http://127.0.0.1:3000/Music%20playing%20site/love.html');
+    window.open('love.html');
 });
 
 $("#devotional").click(function(){
-    window.open('http://127.0.0.1:3000/Music%20playing%20site/devotional.html');
+    window.open('devotional.html');
 });
 
 $("#motivation").click(function(){
-    window.open('http://127.0.0.1:3000/Music%20playing%20site/motivation.html');
+    window.open('motivation.html');
 });
 
 $("#energy").click(function(){
-    window.open('http://127.0.0.1:3000/Music%20playing%20site/party.html');
+    window.open('party.html');
 });
