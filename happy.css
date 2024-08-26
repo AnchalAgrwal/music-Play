@@ -1,0 +1,115 @@
+body{
+    background-color: #E90074;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: black;
+    color: antiquewhite;
+    height:50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.play, .cap{
+    font-size:x-large;
+    font-family: "Great Vibes", cursive;
+    font-weight: lighter;
+}
+
+.musiclist{
+    background-color: black;
+    height: 400px;
+    width: 55%;
+    margin: 10px 50px;
+    padding:10px 20px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="range"]{
+    color: black;
+    height:4px;
+    width:35%;
+    color: #FB2676;
+}
+
+.one{
+    height: 55px;
+    margin: 10px;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.playbutton{
+    height:32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fbplay img{cursor: pointer;}
+
+.musicRange{
+    accent-color: #FB2676;
+    height:2px;
+    cursor: pointer;
+}
+
+.fbplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-shrink: 1;
+}
+
+.item{
+    flex-basis: 150px;
+    flex-grow: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    text-align: left;
+}
+
+#bear, #ball, #pray{
+    position: fixed;
+    right: 1%;
+}
+
+#couple, #encrg{
+    position: fixed;
+    right: 1%;
+    margin-top: 50px;
+}
+
+#sadEm{
+    position: fixed;
+    right: 3%;
+    height: 400px; width:400px;
+    margin-top: 60px;
+}
+
+.enter{text-decoration: underline;}
+
+.boxborder{border: 1px solid #373A40; border-radius: 2%;}
+
+@media (max-width: 900px){
+    #bear, #ball, #pray, #couple, #encrg{
+        position: relative;
+    }
+
+    .musiclist{ width:80%; margin:10px;}
+
+    body{ align-items: center;}
+}
