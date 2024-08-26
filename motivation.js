@@ -7,7 +7,7 @@ $("span").mouseenter(function(){$(this).addClass("enter")});
 $("span").mouseleave(function(){$(this).removeClass("enter")});
 
 //on clicking on playbutton pause button appears, the cover_image becomes dim, beats starts and song plays
-let audioElement = new Audio('motivational/5.mp3');
+let audioElement = new Audio('Motivational/5.mp3');
 
 function makePlay(){
     $('.playbutton').each(function(){
@@ -26,13 +26,13 @@ $('.playbutton').each(function(){
         makePlay();
         index = $(this).attr('id');
 
-        if(audioElement.currentTime > 0 && !audioElement.paused && $(audioElement).attr('src') == 'motivational/'+index+'.mp3'){
+        if(audioElement.currentTime > 0 && !audioElement.paused && $(audioElement).attr('src') == 'Motivational/'+index+'.mp3'){
             //already playing and we click on that song => pause it
             $(this).attr('src','playyy.png');
             audioElement.pause();
         }
 
-        else if(audioElement.currentTime > 0 && audioElement.paused && $(audioElement).attr('src') == 'motivational/'+index+'.mp3'){
+        else if(audioElement.currentTime > 0 && audioElement.paused && $(audioElement).attr('src') == 'Motivational/'+index+'.mp3'){
             //played,paused and clicked  => play
             audioElement.currentTime = $('#'+index+'range').attr('value') * audioElement.duration/100;
             audioElement.play();
@@ -45,7 +45,7 @@ $('.playbutton').each(function(){
 
         else{
             //not started or playing a different song
-            audioElement.src = 'motivational/' + index + '.mp3';
+            audioElement.src = 'Motivational/' + index + '.mp3';
             $(this).attr('src','pause.png');
             audioElement.currentTime = 0;
             audioElement.play();
@@ -81,7 +81,7 @@ $('.prev').each(function(){
 
         newId = '#' + index;
         $(newId).attr('src', 'pause.png');
-        audioElement.src = 'motivational/' + index + '.mp3';
+        audioElement.src = 'Motivational/' + index + '.mp3';
         audioElement.currentTime = 0;
         audioElement.play();
 
@@ -113,7 +113,7 @@ $('.next').each(function(){
 
         newId = '#' + index;
         $(newId).attr('src', 'pause.png');
-        audioElement.src = 'motivational/' + index + '.mp3';
+        audioElement.src = 'Motivational/' + index + '.mp3';
         audioElement.currentTime = 0;
         audioElement.play();
 
@@ -121,7 +121,7 @@ $('.next').each(function(){
         covImg = '.'+ 'cover' + index + 'image';
         $(covImg).css('opacity', '0.5');
         overlayImg = '.' + index +'beats';
-        bckImg = 'motivational/'+index+'.png';
+        bckImg = 'Motivational/'+index+'.png';
         $(overlayImg).css('background-image','url(bckImg)');
 
         //on updating the range, shifting the song to that specified time
